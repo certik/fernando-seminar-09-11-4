@@ -27,6 +27,7 @@ $(TEXOUT).pdf: $(TEXSRC).tex $(BIBSRC).bib
 
 define make-pdflatex
 	@echo " LATEX : First pass, generating pdf output"
+    @mkdir -p $(OUTDIR)
 	@$(PDFLATEX) $(TEXFLAGS) -output-directory=$(OUTDIR) $< &> /dev/null; true;
 	@if ( grep "^Error" $(TEXOUT).log &> /dev/null ); then \
 		sed -n "/^Error/!d;N;p" $(TEXOUT).log;             \
