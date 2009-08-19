@@ -115,7 +115,7 @@
             \end{itemize}
         \item<3-> rich functionality
             \begin{itemize}
-                \item support most important fields of mathematics
+                \item support most important fields of applied mathematics
                 \item implement modern algorithms, e.g. Gruntz algorithm
             \end{itemize}
         \item<4-> use Cython for time critical code
@@ -159,25 +159,27 @@
     \frametitle{But wait, there is Sage \ldots}
 
     \onslide<1->{
-        Sage aims to:
         \begin{itemize}
             \item create a viable \structure{free open source alternative} to Maple, \\ Mathematica, Matlab and Magma
-            \item \structure{glue together} useful mathematics software packages \\ and provide transparent interface to them
+            \item Sage is a software distribution
+            \item Builds on (and ships) existing opensource software, instead
+                of writing things from scratch
         \end{itemize}
     }
 
     \begin{itemize}
-        \item<2-> {\color{red} Cons:}
+        \item<2-> {\color{MyGreen} Pros:}
+            \begin{itemize}
+                \item nice interface to lots of packages, easy to install
+                \item it includes the most recent version of SymPy
+                \item it's currently faster than SymPy on some operations
+            \end{itemize}
+        \item<3-> {\color{red} Cons:}
             \begin{itemize}
                 \item difficult to use as a library
-                \item Sage is a software distribution
                 \item very large in size and with long build times
-                \item Sage prefers to use a preparser (it can be turned off)
-            \end{itemize}
-        \item<3-> {\color{MyGreen} Pros:}
-            \begin{itemize}
-                \item it includes most recent version of SymPy
-                \item nice interface to lots of packages, easy to install
+                \item Sage uses GiNaC as the base symbolic library, so you need
+                    to know C++ to hack on base symbolics
             \end{itemize}
     \end{itemize}
 \end{frame}
