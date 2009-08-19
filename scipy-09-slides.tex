@@ -99,14 +99,14 @@
 \end{frame}
 
 \begin{frame}[fragile]
-    \frametitle{What we want to achieve?}
+    \frametitle{What do we want to achieve?}
 
     \begin{itemize}
         \item<1-> pure Python library
             \begin{itemize}
                 \item no new environment, language, \ldots
                 \item works out of the box on any platform
-                \item non Python modules could be optional
+                \item works nicely with other libraries (IPython, SciPy, NumPy, Sage, Maxima, ...)
             \end{itemize}
         \item<2-> simple design
             \begin{itemize}
@@ -120,17 +120,14 @@
             \end{itemize}
         \item<4-> use Cython for time critical code
             \begin{itemize}
-                \item optional, accompanying the interpreted version
+                \item optional, accompanying the pure Python interpreted version
             \end{itemize}
         \item<5-> liberal licence: BSD
-            \begin{itemize}
-                \item freedom on ways of using SymPy
-            \end{itemize}
     \end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]
-    \frametitle{Why we chose Python?}
+    \frametitle{Why Python}
 
     \begin{itemize}
         \item<1-> widely used language
