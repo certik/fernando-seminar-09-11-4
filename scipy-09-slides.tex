@@ -156,6 +156,18 @@
 \end{frame}
 
 \begin{frame}[fragile]
+    \frametitle{Advantages of being pure Python}
+    \begin{itemize}
+        \item jython (sympy can be used in java applications)
+        \item 1565 tests in 139 files on 21584 lines (pypy, jython, unladen swallow)
+        \item some efforts to get it run on top of CLPython (on lisp)
+        \item google app engine
+        \item iphone
+        \item easy to deploy on windows
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
     \frametitle{But wait, there is Sage \ldots}
 
     \onslide<1->{
@@ -558,7 +570,7 @@ cpdef divisors(int n)
             \item i386-py2.4, i386-py2.5, i386-py2.6
             \item amd64-py2.5-Qnew-sympy-tests
         \end{itemize}
-        \item we use ReST to write documentation
+        \item we use Sphinx to write documentation
     \end{itemize}
 \end{frame}
 
