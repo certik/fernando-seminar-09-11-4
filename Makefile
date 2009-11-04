@@ -1,6 +1,6 @@
 # author  : Mateusz Paprocki
 
-TEXSRC=scipy-09-slides
+TEXSRC=certik-09-11-4
 BIBSRC=euroscipy-slides-2009
 OUTDIR=output
 
